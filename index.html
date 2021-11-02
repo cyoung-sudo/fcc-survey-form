@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container" class="background-tint">
+    <div id="header">
+      <h1 id="title">Create Account</h1>
+      <p id="description">Please fill in the fields below</p>
+    </div>
+
+    <form action="" id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input required type="text" id="name" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input  required type="email" id="email" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" min="18" max="60" placeholder="Age">
+      </div>
+
+      <div class="form-group">
+        <p>Gender</p>
+        <select name="dropdown" id="dropdown">
+          <option value="" disabled selected hidden>Select your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>What is your level of experience in front-end development?</p>
+        <div class="form-options">
+          <label for="beginner">
+            <input type="radio" id="beginner" name="experience" value="beginner">
+          Beginner</label>
+
+          <label for="intermediate">
+            <input type="radio" id="intermediate" name="experience" value="intermediate">
+          Intermediate</label>
+
+          <label for="advanced">
+            <input type="radio" id="advanced" name="experience" value="advanced">
+          Advanced</label>
+
+          <label for="expert">
+            <input type="radio" id="expert" name="experience" value="expert">
+          Expert</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>Which of the following programming languages are you experienced in?</p>
+        <div class="form-options">
+          <label for="html">
+            <input type="checkbox" id="html" name="prog-lang" value="html">
+          HTML</label>
+
+          <label for="css">
+            <input type="checkbox" id="css" name="prog-lang" value="css">
+          CSS</label>
+
+          <label for="javascript">
+            <input type="checkbox" id="javascript" name="prog-lang" value="javascript">
+          Javascript</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>Any additional information we should know about?</p>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
